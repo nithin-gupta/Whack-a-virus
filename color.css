@@ -1,0 +1,124 @@
+body
+{
+            margin: 0;
+            padding: 0;
+            background-image: url("./images/download.jpg");
+            background-position: center;
+            background-size: cover;
+            min-height:100vh;
+            background-color: orange;
+
+   }
+h1
+{
+  text-align: center;
+  text-shadow: 0px 2px 2px black;
+  color: orange;
+  text-transform: capitalize;
+
+}
+h3
+{
+  text-align: center;
+
+}
+.container{
+            margin: auto;
+            display: flex;
+            height: 100vh;
+
+}
+form{
+            margin: auto;
+}
+button {
+            width: 250px;
+            height: 50px;
+            text-align: left;
+            position: relative;
+            border:none;
+            outline: none;
+            border-radius: 32px;
+            box-shadow: 0 3px 3px #aaa;
+            margin: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding-left: 20px;
+
+
+}
+
+
+button::before{
+            content:"Download now";
+            line-height: 50px;
+            text-align: center;
+            border-radius: 0 10px 10px 0;
+            position: absolute;
+            background-color: salmon;
+            width: 170px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+}
+button:nth-child(2)::after,form button:nth-child(2)::before{
+            background-color: skyblue;
+            border-radius: 32px;
+            box-shadow: 1px 2px 10px 5px black;
+
+}
+button:nth-child(4)::after,form button:nth-child(4)::before{
+            background-color: #47b39d;
+              border-radius: 32px;
+            box-shadow: 1px 2px 10px 5px black;
+}
+button:nth-child(5)::after,form button:nth-child(5)::before{
+            background-color: #ffc153;
+              border-radius: 32px;
+            box-shadow: 1px 2px 10px 5px black;
+}
+button:hover{
+            filter: brightness(.8);
+}
+.button:active
+{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+td{
+  border-spacing: 30px;
+}
+p
+{
+  text-align: center;
+  font-variant: small-caps;
+  position: relative;
+  text-decoration: underline;
+}
+a
+{
+  position: relative;
+  align-content: center;
+}
+.download-btn{
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+    bottom: 300px;
+    left: 160px;
+    text-align:left;
+}
+i
+{
+  position: absolute;
+}
+#down{
+  box-shadow: 1px 2px 10px 5px black;
+  border-radius: 32px;
+  cursor: auto;
+}
