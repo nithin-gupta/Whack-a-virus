@@ -15,12 +15,11 @@
   <br>
   <br>
   <h3>Your fortune will be revealed by clicking this button</h3>
-  <br>
-  <!--<a href="lost1.html"><img src="C:\Users\nithi\Downloads\image-removebg-preview (1).png"></a>-->
+  <button type="create" class="btn" onclick="openPopup()">Download</button>
   <br>
   <p>click here to download your favourite one</p>
-  <br>
   <div class="container">
+
     <br>
     <a href="">
       <h3>Click here to download original content</h3>
@@ -39,6 +38,20 @@
   <a href="won.html" id="down" class="download-btn">Download
     <i class="fa fa-download"></i>
   </a>
+  <div class="popup" id="popup">
+    <h2>Malware!!!</h2>
+    <p>Do you want to continue?</p>
+<button type="button" onclick="closePopup()">OK</button>
+  </div>
+<script>
+  let popup = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup")
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup")
+  }
+</script>
 </body>
 
 </html>
