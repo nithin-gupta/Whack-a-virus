@@ -2,11 +2,10 @@ body
 {
             margin: 0;
             padding: 0;
-            background-image: url("./images/download.jpg");
+            /*background-image: url("./images/download.jpg");*/
             background-position: center;
             background-size: cover;
             min-height:100vh;
-            background-color: orange;
 
    }
 h1
@@ -101,7 +100,7 @@ p
 }
 a
 {
-  position: relative;
+  position: absolute;
   align-content: center;
 }
 .download-btn{
@@ -188,4 +187,11 @@ display: none;
 a h3
 {
   padding: 0;
+}
+a download-btn{
+  bottom: 200px;
+}
+img{
+  width: 200px;
+  height: 130px;
 }
